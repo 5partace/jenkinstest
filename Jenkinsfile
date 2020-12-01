@@ -1,4 +1,4 @@
-node('master){
+node('master'){
        stage('checkout'){
 		git branch: 'main', credentialsId: '0c1c67ed-7cb0-4a61-a3bd-58a87497ae94', url: 'https://github.com/5partace/jenkinstest'
 	}
