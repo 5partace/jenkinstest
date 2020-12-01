@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout SCM') {
             steps {
-                git 'https://github.com/5partace/jenkinstest'
+                git branch: 'main', credentialsId: 'bry', url: 'https://github.com/5partace/jenkinstest.git'
             }
         }
     }
