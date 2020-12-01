@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout SCM') {
             steps {
-                git branch: 'main', credentialsId: '0c1c67ed-7cb0-4a61-a3bd-58a87497ae94', url: 'https://github.com/SIT-ICT3x03/Team-28.git'
+                git branch: 'main', credentialsId: '0c1c67ed-7cb0-4a61-a3bd-58a87497ae94', url: 'https://github.com/5partace/jenkinstest.git'
             }
         }
         stage('OWASP DependencyCheck') {
